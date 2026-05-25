@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartMiddag AI</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f6f7fb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      width: 360px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: black;
+      color: white;
+      cursor: pointer;
+    }
+
+    #output {
+      margin-top: 20px;
+      white-space: pre-wrap;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h2>SmartMiddag AI 🍽️</h2>
+
+    <input id="input" placeholder="Skriv f.eks: billig middag for 2" />
+    <button onclick="sendMessage()">Spør AI</button>
+
+    <div id="output"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
