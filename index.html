@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartMiddag AI</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+      background: radial-gradient(circle at top, #e9f1ff, #f7f7fb);
+      color: #111;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .badge {
+      font-size: 12px;
+      background: #111;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin: 0;
+      letter-spacing: -1px;
+    }
+
+    .hero p {
+      max-width: 520px;
+      color: #555;
+      font-size: 16px;
+      margin-top: 12px;
+      line-height: 1.5;
+    }
+
+    .card {
+      margin-top: 30px;
+      background: rgba(255,255,255,0.75);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.5);
+      padding: 22px;
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      width: 340px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      outline: none;
+      margin-top: 10px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: #111;
+      color: white;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    .hint {
+      font-size: 12px;
+      color: #777;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">SmartMiddag AI</div>
+    <div class="badge">Beta</div>
+  </header>
+
+  <div class="hero">
+    <h1>Finn middag på sekunder</h1>
+    <p>
+      SmartMiddag AI hjelper deg å finne billige og smarte middagsvalg basert på Kiwi, Rema 1000 og Coop Extra.
+    </p>
+
+    <div class="card">
+      <input placeholder="Skriv f.eks: billig middag for 2" />
+      <button onclick="alert('AI kommer snart 🚀')">Spør AI</button>
+      <div class="hint">Tips: billig, rask eller sunn middag</div>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 SmartMiddag AI
+  </footer>
+
+</body>
+</html>
